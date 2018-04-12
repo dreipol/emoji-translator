@@ -8,7 +8,7 @@
   "scripts": {
     "prepare": "npm run build && npm test",
     "ci-test": "eslint -c .eslintrc --no-eslintrc -f junit ./ > reports/eslint.xml",
-    "lint": "eslint index.next.js test.js rollup.config.js",
+    "lint": "eslint ./",
     "build": "rollup -c",
     "cov": "nyc report --reporter=text-lcov | coveralls",
     "cov-html": "nyc report --reporter html --report-dir reports/coverage",

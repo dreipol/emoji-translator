@@ -45,7 +45,7 @@ Create a translator function that can be used to replace the emoji
 
 **Parameters**
 
--   `vocabulary` **[Object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object)** emoji vocabulary map (optional, default `{}`)
+-   `vocabulary` **[Object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object)** emoji vocabulary map
 
 **Examples**
 
@@ -54,9 +54,9 @@ import translator from 'emoji-translator';
 
 const vocabulary = { '🍏': 'Apple', '🍋': 'Lemon', '🍌': 'Banana' };
 const translate = translator(vocabulary)
+const string = translate('A 🍌 is normally sweeter than an 🍏')
 
-console.log(translate('A 🍌 is normally sweeter than an 🍏'))
-// A Banana is normally sweeter than an Apple
+console.log(string) // A Banana is normally sweeter than an Apple
 ```
 
 Returns **[Function](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function)** the translation function converting strings containing emoji to plain text
