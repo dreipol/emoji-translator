@@ -8,8 +8,12 @@ export default {
     ],
     output: [
         {
-            file: 'emoji-translator.js',
+            file: 'dist/umd.emoji-translator.js',
             format: 'umd',
+        },
+        {
+            file: 'dist/cjs.emoji-translator.js',
+            format: 'cjs',
         },
     ],
 };
