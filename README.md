@@ -31,7 +31,7 @@ npm i emoji-translator -S
 
 [coverage-url]: https://coveralls.io/r/dreipol/emoji-translator/?branch=master
 
-[Live demo](http://plnkr.co/edit/LNxCnW9dXrNvUhbGhp1n?p=preview)
+[Live demo](http://plnkr.co/edit/XGxYfYl7Znbjq9KgKEUo?p=preview)
 
 ## API
 
