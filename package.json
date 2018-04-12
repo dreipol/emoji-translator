@@ -1,6 +1,6 @@
 {
   "name": "emoji-translator",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Translate emojis into meaningful text strings providing your own vocabulary",
   "main": "dist/cjs.emoji-translator.js",
   "browser": "dist/umd.emoji-translator.js",
