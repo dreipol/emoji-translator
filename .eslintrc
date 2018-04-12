@@ -1,0 +1,3 @@
+extends: "@dreipol/eslint-config"
+env:
+  mocha: true

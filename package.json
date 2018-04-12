@@ -1,0 +1,46 @@
+{
+  "name": "emoji-translator",
+  "version": "0.0.0",
+  "description": "Translate emojis into meaningful text strings providing your own vocabulary",
+  "main": "emoji-translator.js",
+  "jsnext:main": "index.next.js",
+  "module": "index.next.js",
+  "scripts": {
+    "prepare": "npm run build && npm test",
+    "ci-test": "eslint -c .eslintrc --no-eslintrc -f junit ./ > reports/eslint.xml",
+    "lint": "eslint index.next.js test.js rollup.config.js",
+    "build": "rollup -c",
+    "cov": "nyc report --reporter=text-lcov | coveralls",
+    "cov-html": "nyc report --reporter html --report-dir reports/coverage",
+    "doc": "documentation readme index.next.js -s API",
+    "pretest": "npm run build",
+    "test": "npm run lint && nyc mocha test.js"
+  },
+  "files": [
+    "index.next.js"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dreipol/emoji-translator.git"
+  },
+  "keywords": [
+    "es6",
+    "es2015"
+  ],
+  "author": "Gianluca Guarini <gianluca.guarini@gmail.com> (http://gianlucaguarini.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dreipol/emoji-translator/issues"
+  },
+  "homepage": "https://github.com/dreipol/emoji-translator#readme",
+  "devDependencies": {
+    "@dreipol/eslint-config": "^4.0.0",
+    "coveralls": "^3.0.0",
+    "documentation": "^6.1.0",
+    "eslint": "^4.13.1",
+    "mocha": "^4.0.1",
+    "nyc": "^11.6.0",
+    "rollup": "^0.52.1",
+    "rollup-plugin-buble": "^0.19.2"
+  }
+}

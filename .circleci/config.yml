@@ -1,0 +1,32 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: circleci/node:7
+    steps:
+      - checkout
+      - restore_cache:
+          key: dependency-cache-{{ checksum "package.json" }}
+      - run:
+          name: install-npm
+          command: npm install
+      - save_cache:
+          key: dependency-cache-{{ checksum "package.json" }}
+          paths:
+            - node_modules
+      - run:
+          name: Test
+          command: |
+            mkdir -p reports
+            npm run ci-test
+      - run:
+          name: Coverage
+          environment:
+            COVERALLS_REPO_TOKEN: "SXzs2LmzXNaTODJSuLYa1L6BKE6viaWRZ"
+          command: |
+            npm run cov
+            npm run cov-html
+      - store_test_results:
+          path: reports
+      - store_artifacts:
+          path: reports
