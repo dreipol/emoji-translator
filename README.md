@@ -9,11 +9,11 @@
 
 ## Installation
 
-```js
+```bash
 npm i emoji-translator -S
 ```
 
-[circleci-image]: https://circleci.com/gh/dreipol/emoji-translator/tree/master.svg?style=svg&circle-token=
+[circleci-image]: https://circleci.com/gh/dreipol/emoji-translator/tree/master.svg?style=svg&circle-token=5ee9ebf20f91a9649943da08292d457b3776051a
 
 [circleci-url]: https://circleci.com/gh/dreipol/emoji-translator/tree/master
 
