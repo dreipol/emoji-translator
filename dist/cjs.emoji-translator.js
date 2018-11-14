@@ -2,8 +2,8 @@
 
 /**
  * Create a translator function that can be used to replace the emoji
- * @param   { Object } vocabulary - emoji vocabulary map
- * @return { Function } the translation function converting strings containing emoji to plain text
+ * @param   { object } vocabulary - emoji vocabulary map
+ * @return { function } the translation function converting strings containing emoji to plain text
  * @example
  * import translator from 'emoji-translator';
  *
